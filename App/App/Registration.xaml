@@ -1,0 +1,39 @@
+﻿<Window x:Class="App.Registration"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:App"
+        mc:Ignorable="d"
+        Title="Registration" Height="513.414" Width="774.39" FontFamily="Arial Unicode MS" FontSize="16">
+    <Grid>
+        <Label x:Name="label" Content="Фамилия" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_Copy" Content="Имя" HorizontalAlignment="Left" Margin="164,10,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label1" Content="Отчество" HorizontalAlignment="Left" Margin="327,10,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_Copy1" Content="Родной город" HorizontalAlignment="Left" Margin="10,89,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_Copy2" Content="Индекс" HorizontalAlignment="Left" Margin="164,89,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_Copy3" Content="Улица" HorizontalAlignment="Left" Margin="327,89,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="10,36,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textBox_Copy" HorizontalAlignment="Left" Height="23" Margin="164,36,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textBox_Copy1" HorizontalAlignment="Left" Height="23" Margin="327,36,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textBox_Copy2" HorizontalAlignment="Left" Height="23" Margin="10,115,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textBox_Copy3" HorizontalAlignment="Left" Height="23" Margin="164,115,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textBox_Copy4" HorizontalAlignment="Left" Height="23" Margin="327,115,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <DatePicker HorizontalAlignment="Left" Margin="490,34,0,0" VerticalAlignment="Top" Width="123"/>
+        <Label x:Name="label_Copy4" Content="Дата рождения" HorizontalAlignment="Left" Margin="490,8,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label1_Copy" Content="Возвраст" HorizontalAlignment="Left" Margin="636,8,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBox_Copy5" HorizontalAlignment="Left" Height="23" Margin="636,34,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="59" IsReadOnlyCaretVisible="True"/>
+        <Label x:Name="label_Copy5" Content="Вес" HorizontalAlignment="Left" Margin="10,168,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBox_Copy6" HorizontalAlignment="Left" Height="23" Margin="10,199,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="60"/>
+        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="164,195,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="label_Copy6" Content="Спортивный клуб" HorizontalAlignment="Left" Margin="164,164,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="button" Content="Зарегестрироваться" HorizontalAlignment="Left" Margin="79,427,0,0" VerticalAlignment="Top" Width="181"/>
+        <Label x:Name="label_Copy7" Content="Логин" HorizontalAlignment="Left" Margin="79,263,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_Copy8" Content="Пароль" HorizontalAlignment="Left" Margin="79,308,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBox_Copy7" HorizontalAlignment="Left" Height="23" Margin="79,289,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="181"/>
+        <TextBox x:Name="textBox_Copy8" HorizontalAlignment="Left" Height="23" Margin="79,334,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="181"/>
+        <Label x:Name="label_Copy9" Content="Повторите пароль" HorizontalAlignment="Left" Margin="79,358,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBox_Copy9" HorizontalAlignment="Left" Height="23" Margin="79,384,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="181"/>
+
+    </Grid>
+</Window>
