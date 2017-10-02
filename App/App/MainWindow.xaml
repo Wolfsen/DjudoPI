@@ -7,12 +7,16 @@
         mc:Ignorable="d"
         Title="Authorization" Height="350" Width="525">
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="20*"/>
-            <ColumnDefinition Width="31*"/>
-            <ColumnDefinition Width="115*"/>
-            <ColumnDefinition Width="351*"/>
-        </Grid.ColumnDefinitions>
+        <TextBox HorizontalAlignment="Left" Height="25" Margin="138,82,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="258" FontSize="16"/>
+        <Label Content="Логин" HorizontalAlignment="Left" Margin="127,51,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="Пароль" HorizontalAlignment="Left" Margin="127,118,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="138,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="258" FontSize="16"/>
+        <Button Content="Вход" HorizontalAlignment="Left" Margin="127,250,0,0" VerticalAlignment="Top" Width="12
+                0" FontSize="16"/>
+        <Button Content="Регистрация" HorizontalAlignment="Left" Margin="292,250,0,0" VerticalAlignment="Top" Width="120" FontSize="16"/>
+        <TextBlock HorizontalAlignment="Left" Margin="156,201,0,0" TextWrapping="Wrap" Text="Забыли пароль?" VerticalAlignment="Top" Width="111" FontSize="14"/>
+        <TextBlock HorizontalAlignment="Left" Margin="314,201,0,0" TextWrapping="Wrap" Text="Я гость" VerticalAlignment="Top" FontSize="14"/>
+
 
     </Grid>
 </Window>
