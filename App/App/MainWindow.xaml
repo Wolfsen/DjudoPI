@@ -5,8 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:App"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="Authorization" Height="350" Width="525">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20*"/>
+            <ColumnDefinition Width="31*"/>
+            <ColumnDefinition Width="115*"/>
+            <ColumnDefinition Width="351*"/>
+        </Grid.ColumnDefinitions>
+
     </Grid>
 </Window>
