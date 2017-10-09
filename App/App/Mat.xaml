@@ -1,0 +1,25 @@
+﻿<Window x:Class="App.Mat"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:App"
+        mc:Ignorable="d"
+        Title="Mat" Height="300" Width="416.022">
+    <Grid>
+        <DataGrid x:Name ="dgv" HorizontalAlignment="Left" Height="169" VerticalAlignment="Top" Width="288" Margin="0,41,0,0" FontFamily="Arial">
+            <Grid>
+                <Label Content="lbName" HorizontalAlignment="Left" Margin="10,69,0,0" VerticalAlignment="Top"/>
+
+            </Grid>
+        </DataGrid>
+
+        <Label x:Name ="lb" Content="Мат" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Arial" FontSize="14"/>
+
+        <Button x:Name ="butAdd" Content="Добавить" HorizontalAlignment="Left" Margin="312,41,0,0" VerticalAlignment="Top" Width="75" FontFamily="Arial"/>
+        <Button x:Name ="butEdit" Content="Редактирование" HorizontalAlignment="Left" Margin="312,75,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name ="ButDelete" Content="Удалить" HorizontalAlignment="Left" Margin="312,148,0,0" VerticalAlignment="Top" Width="75"/>
+
+
+    </Grid>
+</Window>
