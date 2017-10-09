@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:App"
         mc:Ignorable="d"
-        Title="Registration" Height="510.975" Width="689.024" FontFamily="Arial Unicode MS" FontSize="16">
+        Title="Registration" Height="519.805" Width="759.592">
     <Grid>
         <Label x:Name="label" Content="Фамилия" HorizontalAlignment="Left" Margin="49,14,0,0" VerticalAlignment="Top"/>
         <Label x:Name="label_Copy" Content="Имя" HorizontalAlignment="Left" Margin="203,14,0,0" VerticalAlignment="Top"/>
