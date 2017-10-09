@@ -15,18 +15,13 @@ using System.Windows.Shapes;
 namespace App
 {
     /// <summary>
-    /// Логика взаимодействия для Window1.xaml
+    /// Логика взаимодействия для ControlWindow.xaml
     /// </summary>
-    public partial class Window1 : Window
+    public partial class ControlWindow : Window
     {
-        public Window1()
+        public ControlWindow()
         {
             InitializeComponent();
-        }
-
-        private void button_Click(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }
