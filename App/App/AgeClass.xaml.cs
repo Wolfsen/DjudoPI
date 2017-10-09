@@ -15,18 +15,13 @@ using System.Windows.Shapes;
 namespace App
 {
     /// <summary>
-    /// Логика взаимодействия для Window1.xaml
+    /// Логика взаимодействия для AgeClass.xaml
     /// </summary>
-    public partial class Window1 : Window
+    public partial class AgeClass : Window
     {
-        public Window1()
+        public AgeClass()
         {
             InitializeComponent();
-        }
-
-        private void button_Click(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }
