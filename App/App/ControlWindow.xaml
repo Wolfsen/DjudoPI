@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:App"
         mc:Ignorable="d"
-        Title="ControlWindow" Height="502.793" Width="754.19">
+        Title="Соревнования по дзюдо" Height="502.793" Width="754.19">
     <Grid>
         <Button x:Name="butWazaAriWhite"  Margin="50,246,588,0" VerticalAlignment="Top" Width="110" Click="button_Click" Height="37">
             <TextBlock x:Name="textBlock" TextWrapping="Wrap" Text="Ваза-ари белому" Height="37" Width="88" TextAlignment="Center"/>
