@@ -5,10 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:App"
         mc:Ignorable="d"
-        Title="Registration" Height="433.805" Width="759.592">
-    <Grid>
-        <GroupBox x:Name="groupBox" Header="Добавление" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" Height="384" Width="713">
-            <Grid HorizontalAlignment="Left" Height="355" Margin="0,10,-2,-3" VerticalAlignment="Top" Width="703">
+        Title="Registration" Height="497.48" Width="841.592">
+    <Grid Margin="0,0,0,-5">
+        <GroupBox x:Name="groupBox" Header="Добавление" HorizontalAlignment="Left" Margin="37,68,0,0" VerticalAlignment="Top" Height="369" Width="583">
+            <Grid HorizontalAlignment="Left" Margin="0,10,-2,-22" Width="573">
                 <Label x:Name="label" Content="Фамилия" HorizontalAlignment="Left" Margin="21,14,0,0" VerticalAlignment="Top"/>
                 <Label x:Name="label_Copy" Content="Имя" HorizontalAlignment="Left" Margin="191,14,0,0" VerticalAlignment="Top"/>
                 <Label x:Name="label1" Content="Отчество" HorizontalAlignment="Left" Margin="339,14,0,0" VerticalAlignment="Top"/>
@@ -26,7 +26,6 @@
                 <TextBox x:Name="textBox_Copy6" HorizontalAlignment="Left" Height="23" Margin="22,207,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="77"/>
                 <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="383,274,0,0" VerticalAlignment="Top" Width="181"/>
                 <Label x:Name="label_Copy6" Content="Спортивный клуб" HorizontalAlignment="Left" Margin="383,249,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5"/>
-                <Button x:Name="button" Content="Добавить участника" HorizontalAlignment="Left" Margin="444,325,0,0" VerticalAlignment="Top" Width="137"/>
                 <Label x:Name="label2" Content="Возрастная категория:" HorizontalAlignment="Left" Margin="117,129,0,0" VerticalAlignment="Top"/>
                 <Label x:Name="label2_Copy" Content="Весовая категория:" HorizontalAlignment="Left" Margin="117,183,0,0" VerticalAlignment="Top"/>
                 <ComboBox x:Name="comboBox_Copy" HorizontalAlignment="Left" Margin="22,274,0,0" VerticalAlignment="Top" Width="181"/>
@@ -35,6 +34,10 @@
 
             </Grid>
         </GroupBox>
+        <Label x:Name="label_Copy2" Content="Участники" HorizontalAlignment="Left" Margin="38,18,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold" Width="106"/>
+        <Button x:Name="but1" Content="Добавить" HorizontalAlignment="Left" VerticalAlignment="Top" Width="157" Margin="651,80,0,0"/>
+        <Button x:Name="but2" Content="Редактировать" HorizontalAlignment="Left" VerticalAlignment="Top" Width="157" Margin="651,108,0,0"/>
+        <Button x:Name="but3" Content="Удалить" HorizontalAlignment="Left" VerticalAlignment="Top" Width="157" Margin="651,160,0,0"/>
     </Grid>
 
 </Window>
