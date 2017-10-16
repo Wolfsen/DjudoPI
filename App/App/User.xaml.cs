@@ -31,6 +31,7 @@ namespace App
         private void butAdd_Click(object sender, RoutedEventArgs e)
         {
             VisibleTrue();
+            groupBox.Header = "Добавить";
         }
 
         void VisibleTrue()
@@ -40,6 +41,7 @@ namespace App
             butDelete.IsEnabled = false;
             butEdit.IsEnabled = false;
             DataGrid.Visibility = Visibility.Hidden;
+            ClearTextBox();
         }
         void VisibleFalse()
         {
@@ -53,6 +55,7 @@ namespace App
         private void butEdit_Click(object sender, RoutedEventArgs e)
         {
             VisibleTrue();
+            groupBox.Header = "Редактировать";
         }
 
         private void butDelete_Click(object sender, RoutedEventArgs e)
@@ -96,6 +99,20 @@ namespace App
             DataGrid.ItemsSource = dt.DefaultView;
             con.Close();
             DataGrid.Columns[0].Visibility = Visibility.Hidden;
+        }
+
+        void ClearTextBox()
+        {
+            foreach (Control c in containerCanvas.Children)
+            {
+                foreach (Control ctl in containerCanvas.Children)
+                {
+                    if (ctl.GetType() == typeof(CheckBox))
+                        ((CheckBox)ctl).IsChecked = false;
+                    if (ctl.GetType() == typeof(TextBox))
+                        ((TextBox)ctl).Text = String.Empty;
+                }
+            }
         }
     }
 }
