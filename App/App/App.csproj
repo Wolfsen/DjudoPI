@@ -72,6 +72,9 @@
     <Compile Include="SportClub.xaml.cs">
       <DependentUpon>SportClub.xaml</DependentUpon>
     </Compile>
+    <Compile Include="User.xaml.cs">
+      <DependentUpon>User.xaml</DependentUpon>
+    </Compile>
     <Compile Include="WeightClass.xaml.cs">
       <DependentUpon>WeightClass.xaml</DependentUpon>
     </Compile>
@@ -108,6 +111,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="SportClub.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="User.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
