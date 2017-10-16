@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,6 +21,8 @@ namespace App
     /// </summary>
     public partial class User : Window
     {
+        SqlConnection con = new SqlConnection("Server=PC; Database=Djudo;Integrated security=True");
+
         public User()
         {
             InitializeComponent();
@@ -26,25 +30,72 @@ namespace App
 
         private void butAdd_Click(object sender, RoutedEventArgs e)
         {
-
+            VisibleTrue();
         }
+
         void VisibleTrue()
         {
-            label_F.Visibility = Visibility.Visible;
-            label_I.Visibility = Visibility.Visible;
-            label_O.Visibility = Visibility.Visible;
-            label_password.Visibility = Visibility.Visible;
-            label_login.Visibility = Visibility.Visible;
-            CheckBoxAdmin.Visibility = Visibility.Visible;
-            textBox_F.Visibility = Visibility.Visible;
-            textBox_I.Visibility = Visibility.Visible;
-            textBox_O.Visibility = Visibility.Visible;
-            textBox_Password.Visibility = Visibility.Visible;
-            textBox_Login.Visibility = Visibility.Visible;
+            groupBox.Visibility = Visibility.Visible;
             butAdd.IsEnabled = false;
             butDelete.IsEnabled = false;
             butEdit.IsEnabled = false;
             DataGrid.Visibility = Visibility.Hidden;
+        }
+        void VisibleFalse()
+        {
+            groupBox.Visibility = Visibility.Hidden;
+            butAdd.IsEnabled = true;
+            butDelete.IsEnabled = true;
+            butEdit.IsEnabled = true;
+            DataGrid.Visibility = Visibility.Visible;
+        }
+
+        private void butEdit_Click(object sender, RoutedEventArgs e)
+        {
+            VisibleTrue();
+        }
+
+        private void butDelete_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                if (DataGrid.SelectedItem != null && DataGrid.SelectedIndex != - 1)
+                {
+                    //DialogResult dialogResult = MessageBox.Show("Вы уверены, что хотите удалить эту запись таблицы?", "Проверка", MessageBoxButtons.YesNo);
+                    //if (dialogResult == DialogResult.Yes)
+                    //{
+                    DataRowView row = (DataRowView)DataGrid.SelectedItems[0];
+                    string query = "DELETE  FROM [dbo].[User] WHERE [Id] =" + row["Id"];
+                        SqlCommand cmd = new SqlCommand(query, con);
+                        con.Open();
+                        cmd.ExecuteNonQuery();
+                        con.Close();
+                        LoadTable();
+                    //}
+                }
+                else { MessageBox.Show("Выберите запись для удаления"); }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Что-то пошло не так, попробуйте снова. Ошибка:" + ex.Message);
+            }
+        }
+
+        private void butOK_Click(object sender, RoutedEventArgs e)
+        {
+            VisibleFalse();
+        }
+
+        public void LoadTable()
+        {
+            string myTable = "SELECT [Id] as 'Id', [FIO] as 'ФИО', [Login] as 'Логин', [Password] as 'Пароль', [Admin] as 'Администратор' FROM [dbo].[User]";
+            con.Open();
+            SqlDataAdapter da = new SqlDataAdapter(myTable, con);
+            DataTable dt = new DataTable("Employee");
+            da.Fill(dt);
+            DataGrid.ItemsSource = dt.DefaultView;
+            con.Close();
+            DataGrid.Columns[0].Visibility = Visibility.Hidden;
         }
     }
 }
